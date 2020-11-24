@@ -1,1 +1,3 @@
 # 16.D3-Challenge
+
+In this challenge, we were tasked on creating a playful and interactive illustration on census data. The data set includes information on the following: obesity percentage, smoking percentage, lack of healthcare percentage, poverty percentage, age median, and household income median. The data set is visualized and broken at a state level for clear comparison. D3 was the main source utilized to generate the graph and it's interactive elements. Below is a sample on how the data can be changed to illustrate different results.
