@@ -157,7 +157,7 @@ d3.csv("assets/data/data.csv").then(function (Data) {
 
     var xAxis = chartGroup.append("g")
         .classed("x-axis", true)
-        .attr("transform", `translate(0,0)`)
+        .attr("transform", `translate(0,${height})`)
         .call(bottomAxis);
 
     var yAxis = chartGroup.append("g")
@@ -179,8 +179,8 @@ d3.csv("assets/data/data.csv").then(function (Data) {
         .classed("stateCircle", true);
 
     circlesGroup.append("text")
-        .attr("x", d => xLinearScale(d[xAxis]))
-        .attr("y", d => yLinearScale(d[yAxis]))
+        .attr("x", d => xLinearScale(d[chosenXAxis]))
+        .attr("y", d => yLinearScale(d[chosenYAxis]))
         .attr("dy", 6)
         .classed("stateText", true)
         .attr("text-anchor", "middle")
